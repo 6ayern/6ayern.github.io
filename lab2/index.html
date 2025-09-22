@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>список</h2>
+    <ul>
+    <li><a href="http://kubsu.ru/">1. ссылка на главную страницу КубГУ</a> </li>
+    <li><a href="https://kubsu.ru/ru">2. на главную сайта КубГУ c https</a> </li>
+    <li>
+        3.
+        <a href="https://6ayern.github.io/image.jpg">
+        <img src="https://github.com/6ayern/6ayern.github.io/blob/main/image.jpg?raw=true" alt="картинка" style="width: 600px;"></a> </li>
+    <li><a href="https://www.kubsu.ru/news">4.на внутреннюю страницу</a></li>
+    <li><a href="/">5.на главную страницу</a> </li>
+    <li><a href="https://www.kubsu.ru/index.php#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%C2%BB.-,%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C,-07.08.2025">6.на фрагмент текущей страницы</a></li>
+    <li><a href="https://www.kubsu.ru/ru/education/education_of_foreign_citizens/?kupy=1&ardorcheg=1&pz=0">7.ссылку с тремя параметрами в URL</a></li>
+    <li><a href="https://www.kubsu.ru/news?id1234">8.Ссылка с ID</a></li>
+    <li><a href="image.jpg">9.Ссылка в текущем каталоге</a></li>
+    <li><a href="https://github.com/6ayern/6ayern.github.io/blob/main/about">10.В каталоге about</a></li>
+    <li><a href="https://github.com/6ayern/6ayern.github.io/tree/main/1">11.В каталоге уровнем выше текущего</a></li>
+    <li><a href="https://github.com/6ayern/6ayern.github.io/tree/main/1/2">12.В каталоге двумя уровнями выше</a></li>
+        <p>13. Официальный сайт
+          <a href="https://kubsu.ru"
+            >Кубанского государственного университета</a
+          >
+          содержит информацию о факультетах.
+        </p>
+    <li><a href="https://dota2.fandom.com/ru/wiki/Dota_2_%D0%92%D0%B8%D0%BA%D0%B8#:~:text=%D0%93%D0%95%D0%A0%D0%9E%D0%98-,%D0%9F%D0%A0%D0%95%D0%94%D0%9C%D0%95%D0%A2%D0%AB,-%D0%9C%D0%95%D0%A5%D0%90%D0%9D%D0%98%D0%9A%D0%90"> 14.образовательные программы</a></li>
+    <li>
+        <a href="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png">15.ЛогоЛюбимиКубГУ
+            <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" alt="venom">
+        </a>
+    </li>
+    <li><a href=""> 16.Пустой href</a></li>
+    <li><a> 17.Ссылка без адреса </a></li>
+    <li><a href="https://example.com/hidden" rel="nofollow"> 18.Ссылка с запретом перехода поисковикам</a></li>
+    <li><a href="https://example.com/noindex" rel="noindex">19.Запрещен для индексации поисковиками</a></li>
+         <ol>
+             20.
+          <li>
+            <a href="https://kubsu.ru" title="Официальный сайт КубГУ">КубГУ</a>
+          </li>
+          <li>
+            <a href="https://kubsu.ru/faculty" title="Факультеты университета"
+              >Факультеты</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://kubsu.ru/abitur"
+              title="Информация для абитуриентов"
+              >Абитуриентам</a
+            >
+          </li>
+        </ol>
+        <p>
+          21.
+          <a href="ftp://username:password@ftp.example.com/file.txt"
+            >FTP файл</a
+          >
+        </p>
+
+         <h2 id="section">Раздел для якорной ссылки</h2>
+        <p>Этот раздел можно найти по якорной ссылке.</p>
+      </body>
+    </html>
+    <main>
+      <form method="post" action="exemple.php" style="padding: 20px; border: 2px solid #000;gap: 20px; flex-direction: column; display: flex; justify-content: center; align-items: center">
+        <label for="username">ФИО</label>
+        <input type="text" name="username" />
+        <label for="numphone">Телефон</label>
+        <input type="tel" name="numphone" />
+        <label for="email">e-mail</label>
+        <input type="email" name="email" />
+        <label for="date">Дата рождения</label>
+        <input type="date" name="date" />
+        <div class="radio-group">
+            <p>Выберите пол</p>
+            <label for="fst-radio">Муж</label>
+            <input id="fst-radio" value="m" required type="radio">
+            <br>
+            <label for="sec-radio">Жен</label>
+            <input id="sec-radio" value="w" type="radio">
+        </div>
+        <label for="bestprog">дюбимый язык программирования</label>
+        <select name="bestprog" id="bestprog">
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="js">JavaScript</option>
+            <option value="py">Python</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+        </select>
+        <label for="description">биография</label>
+        <textarea name="description" id="description"></textarea>
+        <label for="contract">с контрактом ознакомлен
+
+            <input type="checkbox" name="contract" id="contract">
+        </label>
+        <button>Сохранить</button>
+      </form>
+</form>
+    </main>
+    <script>
+        
+    </script>
+  </body>
+</html>
+
+
+
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
