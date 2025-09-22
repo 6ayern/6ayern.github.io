@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Учебный сайт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h2>список</h2>
+  <header>
+      <div class="header-row">
+        <div class="logo-name">
+          <img src="webPicture.png" alt="Логотип сайта" class="logo-img">
+          <span class="site-name">Сайт для изучения Web-программирования</span>
+        </div>
+        <nav id="main-nav">
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+          <a href="#">Ссылка 3</a>
+        </nav>
+      </div>
+  </header>
+
+    <main id="container">
+        <div class="content">
+            <h2>Пример ссылок, таблицы, формы</h2>
+        </div>
+
+        <section>
+        <h2 id="top">Список ссылок</h2>
     <ul>
     <li><a href="http://kubsu.ru/">1. ссылка на главную страницу КубГУ</a> </li>
     <li><a href="https://kubsu.ru/ru">2. на главную сайта КубГУ c https</a> </li>
@@ -63,7 +83,37 @@
             >FTP файл</a
           >
         </p>
+    </ul>
+        </section>
 
+           <div class="content">
+      <h2>Пример таблицы</h2>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th rowspan="2">№</th>
+            <th colspan="2">ФИО</th>
+            <th rowspan="2">Группа</th>
+            <th rowspan="2">Оценка</th>
+          </tr>
+          <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Иван</td><td>Иванов</td><td>А-101</td><td>5</td></tr>
+          <tr><td>2</td><td>Петр</td><td>Петров</td><td>А-102</td><td>4</td></tr>
+          <tr><td>3</td><td>Сергей</td><td>Сидоров</td><td>А-103</td><td>5</td></tr>
+          <tr><td>4</td><td>Анна</td><td>Кузнецова</td><td>А-101</td><td>3</td></tr>
+          <tr><td>5</td><td>Мария</td><td>Соколова</td><td>А-102</td><td>4</td></tr>
+          <tr><td>6</td><td>Дмитрий</td><td>Орлов</td><td>А-103</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+        <section id="form">
+            <h2>Форма</h2>
          <h2 id="section">Раздел для якорной ссылки</h2>
         <p>Этот раздел можно найти по якорной ссылке.</p>
       </body>
@@ -95,7 +145,6 @@
             <option value="py">Python</option>
             <option value="php">PHP</option>
             <option value="java">Java</option>
-        </select>
         <label for="description">биография</label>
         <textarea name="description" id="description"></textarea>
         <label for="contract">с контрактом ознакомлен
@@ -103,20 +152,24 @@
             <input type="checkbox" name="contract" id="contract">
         </label>
         <button>Сохранить</button>
+        </select>
       </form>
-</form>
-    </main>
-    <script>
         
-    </script>
-  </body>
-</html>
+        <div class="box">
+            <img src="webPicture.png" alt="Логотип Web">
+            <span>Web-Programming</span>
+        </div>
+    </main>
 
-
-
-    </ul>
+            <footer>
+                <div class="container">
+                    <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
+                </div>
+            </footer>
+    </main>
 </body>
 </html>
+
 
 
 
