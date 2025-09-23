@@ -10,15 +10,18 @@
   padding: 0 15px;
 }
 
-header, footer {
-  background-color: #333;
-  color: #fff;
+header,
+footer {
+  background-color: #550202;
+  color: #000000;
   width: 100%;
 }
 
 header {
   padding: 15px 0;
+  width: 100%;
 }
+
 
 footer {
   padding: 20px 0;
@@ -30,6 +33,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .logo-name {
@@ -46,7 +54,7 @@ footer {
 .site-name {
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: #000000;
 }
 
 #main-nav {
@@ -56,7 +64,7 @@ footer {
 
 #main-nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -100,7 +108,12 @@ footer {
   margin-top: 20px;
 }
 
-.styled-table th,
+.styled-table th{
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+
 .styled-table td {
   border: 1px solid #999;
   padding: 10px;
@@ -146,7 +159,7 @@ footer {
   padding: 25px;
   margin: 30px 0;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #form h2 {
@@ -226,4 +239,37 @@ footer {
 
 .btn-submit:active {
   transform: scale(0.98);
+}
+
+
+@media (max-width: 800px) {
+  .styled-table {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-name {
+    font-size: 12px;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
