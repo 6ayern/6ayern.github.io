@@ -2,69 +2,28 @@
 <html lang="en">
 
 <head>
-      <title>Bootstrap</title>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <style>
-html {
-  font-size: 10px;
-}
-body {
-  font-size: 12pt;
-  padding: 10px;
-}
-main, aside {
-  background-color: #ddd;
-  padding: 10px;
-  font-family: serif;
-  height: 100%;
-}
-header {
-  background-color: #550202;
-  color: #000000;
-  margin-top: 15px;
-  font-size: 2em;
-  font-weight: bold;
-  padding: 10px;
-}
-h1 {
-  margin-top: 15px;
-  font-size: 2em;
-  font-weight: bold;
-}
-   </style>
   <meta charset="UTF-8">
   <title>Учебный сайт</title>
-  <link rel="stylesheet" href="style.css">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-  <header>
-    <div class="header-row">
-      <div class="logo-name">
-        <img src="venom.jpg" alt="Логотип сайта" class="logo-img">
-        <span class="site-name">Сайт для изучения Web-программирования</span>
+<body style="margin: 0; padding: 0;">
+  <header style="background-color: #550202; color: #000000; width: 100%; padding: 15px 0; width: 100%;">
+    <div class="header-row" style="display: flex; justify-content: space-between; align-items: center; padding: 0 15px;">
+      <div class="logo-name" style="display: flex; align-items: center; gap: 10px;">
+        <img src="venom.jpg" alt="Логотип сайта" class="logo-img" style="width: 80px; height: auto;">
+        <span class="site-name" style="font-size: 18px; font-weight: bold; color: #000000;">Сайт для изучения Web-программирования</span>
       </div>
-      <nav id="main-nav">
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-        <a href="#">Ссылка 3</a>
+      <nav id="main-nav" style="display: flex; gap: 20px;">
+        <a href="#" style="text-decoration: none; color: #000000; font-weight: bold;">Ссылка 1</a>
+        <a href="#" style="text-decoration: none; color: #000000; font-weight: bold;">Ссылка 2</a>
+        <a href="#" style="text-decoration: none; color: #000000; font-weight: bold;">Ссылка 3</a>
       </nav>
     </div>
   </header>
 
-  <main id="container">
-    <div class="content">
+  <main id="container" style="max-width: 960px; margin: 0 auto; padding: 0 15px;">
+    <div class="content" style="background: #e3e3e3; padding: 20px; margin-bottom: 30px; text-align: center;">
       <h2>Пример ссылок, таблицы, формы</h2>
     </div>
     <div class="mobile-reverse">
@@ -74,8 +33,7 @@ h1 {
           <li><a href="http://kubsu.ru/">1. ссылка на главную страницу КубГУ</a> </li>
           <li><a href="https://kubsu.ru/ru">2. на главную сайта КубГУ c https</a> </li>
           <li>
-            <!-- 3 -->
-            <img src="image.jpg" alt="Цветок" class="download-img" />
+            <img src="image.jpg" alt="Цветок" class="download-img" style="width: 150px; height: auto; display: block; margin: 10px 0;" />
           </li>
           <li><a href="https://www.kubsu.ru/news">4.на внутреннюю страницу</a></li>
           <li><a href="/">5.на главную страницу</a> </li>
@@ -126,129 +84,130 @@ h1 {
         </ul>
       </section>
   
-      <div class="content">
+      <div class="content" style="background: #e3e3e3; padding: 20px; margin-bottom: 30px; text-align: center;">
         <h2>Пример таблицы</h2>
-        <table class="styled-table">
-          <thead>
+        <table class="styled-table" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <thead style="background-color: #444; color: #fff;">
             <tr>
-              <th rowspan="2">№</th>
-              <th colspan="2">ФИО</th>
-              <th rowspan="2">Группа</th>
-              <th rowspan="2">Оценка</th>
+              <th rowspan="2" style="border: 1px solid #999; padding: 10px; text-align: center;">№</th>
+              <th colspan="2" style="border: 1px solid #999; padding: 10px; text-align: center;">ФИО</th>
+              <th rowspan="2" style="border: 1px solid #999; padding: 10px; text-align: center;">Группа</th>
+              <th rowspan="2" style="border: 1px solid #999; padding: 10px; text-align: center;">Оценка</th>
             </tr>
             <tr>
-              <th>Имя</th>
-              <th>Фамилия</th>
+              <th style="border: 1px solid #999; padding: 10px; text-align: center;">Имя</th>
+              <th style="border: 1px solid #999; padding: 10px; text-align: center;">Фамилия</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Михаил</td>
-              <td>Зубенко</td>
-              <td>МО 21/1</td>
-              <td>5</td>
+            <tr style="background-color: #eee;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Михаил</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Зубенко</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">5</td>
             </tr>
-            <tr>
-              <td>2</td>
-              <td>Канеки</td>
-              <td>Кен</td>
-              <td>МО 21/1</td>
-              <td>5</td>
+            <tr style="background-color: #fff;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">2</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Канеки</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Кен</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">5</td>
             </tr>
-            <tr>
-              <td>3</td>
-              <td>Данжен</td>
-              <td>Мастер</td>
-              <td>МО 21/1</td>
-              <td>5</td>
+            <tr style="background-color: #eee;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">3</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Данжен</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Мастер</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">5</td>
             </tr>
-            <tr>
-              <td>4</td>
-              <td>Глеб</td>
-              <td>Борисович</td>
-              <td>МО 21/1</td>
-              <td>1</td>
+            <tr style="background-color: #fff;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">4</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Глеб</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Борисович</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">1</td>
             </tr>
-            <tr>
-              <td>5</td>
-              <td>Адольф</td>
-              <td>Художник</td>
-              <td>МО 21/1</td>
-              <td>3</td>
+            <tr style="background-color: #eee;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">5</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Адольф</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Художник</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">3</td>
             </tr>
-            <tr>
-              <td>6</td>
-              <td>Андрей</td>
-              <td>Чикатило</td>
-              <td>МО 21/1</td>
-              <td>5</td>
+            <tr style="background-color: #fff;">
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">6</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Андрей</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">Чикатило</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">МО 21/1</td>
+              <td style="border: 1px solid #999; padding: 10px; text-align: center;">5</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <section id="form">
-      <h2>Форма</h2>
+    <section id="form" style="background: #fff; padding: 25px; margin: 30px 0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+      <h2 style="text-align: center; margin-bottom: 20px; color: #333;">Форма</h2>
       <h2 id="section">Раздел для якорной ссылки</h2>
       <p>Этот раздел можно найти по якорной ссылке.</p>
-</body>
 
-</html>
-  <form method="post" action="exemple.php"
-    style="padding: 20px; border: 2px solid #000;gap: 20px; flex-direction: column; display: flex; justify-content: center; align-items: center">
-    <label for="username">ФИО</label>
-    <input type="text" name="username" />
-    <label for="numphone">Телефон</label>
-    <input type="tel" name="numphone" />
-    <label for="email">e-mail</label>
-    <input type="email" name="email" />
-    <label for="date">Дата рождения</label>
-    <input type="date" name="date" />
-    <div class="radio-group">
-      <p>Выберите пол</p>
-      <label for="fst-radio">Муж</label>
-      <input id="fst-radio" value="m" required type="radio">
-      <br>
-      <label for="sec-radio">Жен</label>
-      <input id="sec-radio" value="w" type="radio">
+      <form method="post" action="exemple.php" style="padding: 20px; border: 2px solid #000; gap: 20px; flex-direction: column; display: flex; justify-content: center; align-items: center">
+        <label for="username" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">ФИО</label>
+        <input type="text" name="username" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+        
+        <label for="numphone" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">Телефон</label>
+        <input type="tel" name="numphone" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+        
+        <label for="email" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">e-mail</label>
+        <input type="email" name="email" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+        
+        <label for="date" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">Дата рождения</label>
+        <input type="date" name="date" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+        
+        <div class="radio-group">
+          <p>Выберите пол</p>
+          <label for="fst-radio">Муж</label>
+          <input id="fst-radio" value="m" required type="radio">
+          <br>
+          <label for="sec-radio">Жен</label>
+          <input id="sec-radio" value="w" type="radio">
+        </div>
+        
+        <label for="bestprog" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">дюбимый язык программирования</label>
+        <select name="bestprog" id="bestprog" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;">
+          <option value="pascal">Pascal</option>
+          <option value="c">C</option>
+          <option value="cpp">C++</option>
+          <option value="js">JavaScript</option>
+          <option value="py">Python</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+        </select>
+        
+        <label for="description" style="display: block; margin-bottom: 15px; font-weight: bold; color: #444;">биография</label>
+        <textarea name="description" id="description" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; min-height: 80px;"></textarea>
+        
+        <label for="contract" style="display: flex; align-items: center; gap: 8px; font-weight: normal;">
+          с контрактом ознакомлен
+          <input type="checkbox" name="contract" id="contract">
+        </label>
+        
+        <button class="btn-submit" style="display: inline-block; width: 100%; padding: 12px; margin-top: 15px; background: #333; color: #fff; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">Сохранить</button>
+      </form>
+    </section>
+
+    <div class="box" style="display: inline-flex; align-items: center; gap: 10px; background-color: #000; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px;">
+      <img src="venom.jpg" alt="Логотип Web" style="width: 80px; height: auto;">
+      <span style="font-size: 22px; font-weight: bold; color: #fff;">Web-Programming</span>
     </div>
-    <label for="bestprog">дюбимый язык программирования</label>
-    <select name="bestprog" id="bestprog">
-      <option value="pascal">Pascal</option>
-      <option value="c">C</option>
-      <option value="cpp">C++</option>
-      <option value="js">JavaScript</option>
-      <option value="py">Python</option>
-      <option value="php">PHP</option>
-      <option value="java">Java</option>
-      <label for="description">биография</label>
-      <textarea name="description" id="description"></textarea>
-      <label for="contract">с контрактом ознакомлен
+  </main>
 
-        <input type="checkbox" name="contract" id="contract">
-      </label>
-      <button>Сохранить</button>
-    </select>
-  </form>
-
-  <div class="box">
-    <img src="venom.jpg" alt="Логотип Web">
-    <span>Web-Programming</span>
-  </div>
-</main>
-
-  <footer>
-  <div class="container">
-    <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
-  </div>
-</footer>
-
+  <footer style="background-color: #550202; color: #000000; width: 100%; padding: 20px 0; text-align: center;">
+    <div class="container" style="max-width: 960px; margin: 0 auto; padding: 0 15px;">
+      <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
+    </div>
+  </footer>
 </body>
 
-
 </html>
-
-
-
