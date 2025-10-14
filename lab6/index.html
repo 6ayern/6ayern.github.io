@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+</head>
+<body>
+    <h1>Калькулятор стоимости заказа</h1>
+    
+    <div>
+        <label for="product">Выберите товар:</label>
+        <select id="product">
+            <option value="500">Смартфон - 500 руб.</option>
+            <option value="300">Наушники - 300 руб.</option>
+            <option value="150">Чехол - 150 руб.</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1">
+    </div>
+    
+    <button id="calculate">Рассчитать стоимость</button>
+    
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('calculate').addEventListener('click', function() {
+            const productSelect = document.getElementById('product');
+            const quantityInput = document.getElementById('quantity');
+            const resultDiv = document.getElementById('result');
+            
+            const price = parseFloat(productSelect.value);
+            const quantity = parseInt(quantityInput.value);
+            
+            if (isNaN(quantity) || quantity < 1) {
+                resultDiv.textContent = 'Пожалуйста, введите корректное количество';
+                return;
+            }
+            
+            const total = price * quantity;
+            resultDiv.textContent = `Стоимость заказа: ${total} руб.`;
+        });
+    </script>
+</body>
+</html>
