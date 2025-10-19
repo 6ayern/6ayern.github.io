@@ -11,7 +11,7 @@ function updatePrice() {
   
   // Скрываем или показываем радиокнопки.
   let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = (select.value == "3" ? "block" : "none");
+  radioDiv.style.display = (select.value == "500" ? "block" : "none");
   
   // Смотрим какая товарная опция выбрана.
   let radios = document.getElementsByName("prodOptions");
@@ -26,7 +26,7 @@ function updatePrice() {
 
   // Скрываем или показываем чекбоксы.
   let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = (select.value == "3" ? "none" : "block");
+  checkDiv.style.display = (select.value == "500" ? "none" : "block");
 
   // Смотрим какие товарные свойства выбраны.
   let checkboxes = document.querySelectorAll("#checkboxes input");
@@ -45,7 +45,7 @@ function updatePrice() {
 
 function getPrices() {
   return {
-    prodTypes: [100, 200, 150],
+    prodTypes: [500, 300, 150],
     prodOptions: {
       option2: 10,
       option3: 5,
@@ -95,3 +95,4 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
   updatePrice();
 });
+
