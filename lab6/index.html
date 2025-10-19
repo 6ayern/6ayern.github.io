@@ -8,29 +8,26 @@
 </head>
 <body>
     <h1>Калькулятор стоимости заказа</h1>
-
-        <div>
-        <label for="quantity">Количество:</label>
-        <input type="number" id="quantity" min="1" value="1">
-    </div>
-
-        
-    <div>
-        <label for="product">Выберите товар:</label>
-        <select id="product">
+    <div id="prodPrice">Выберете тип товара</div>
+    Тип товара:
+    <form>
+        <select name="prodType">
             <option value="500">Смартфон - 500 руб.</option>
             <option value="300">Наушники - 300 руб.</option>
             <option value="150">Чехол - 150 руб.</option>
         </select>
-    </div>
 
-        <div id="form gpoup">
-        <label>Тип услуги:</label>
-        <div class="radio option">
-            <label><input type="radio" id="type1" name="serviceType" value="basic" checked>Базовая услуга</label>
-            <label><input type="radio" id="type2" name="serviceType" value="premium">Премиум услуга</label>
-            <label><input type="radio" id="type3" name="serviceType" value="custom">Кастомная услуга</label>
+        <div id="radios">
+            <label><input type="radio" id="type1" name="prodOptions" value="basic">Базовая услуга</label>
+            <label><input type="radio" id="type2" name="prodOptions" value="premium">Премиум услуга</label>
+            <label><input type="radio" id="type3" name="prodOptions" value="custom">Кастомная услуга</label>
         </div>
+
+        <div id="checkboxes">
+            <label><input type="checkbox" name="prop1"> Свойство 1</label>
+            <label><input type="checkbox" name="prop2"> Свойство 2</label>
+        </div>
+    </form>
             
     <button id="calculate">Рассчитать стоимость</button>
     
@@ -56,6 +53,7 @@
     </script>
 </body>
 </html>
+
 
 
 
