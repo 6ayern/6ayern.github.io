@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
-    let currentPosition = 0;
+    let currentSlide = 0;
     
     function getSlidesPerView() {
         if (window.innerWidth <= 768) {
-            return 1; 
+            return 1;
         } else if (window.innerWidth <= 1024) {
             return 2; 
         } else {
@@ -27,33 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePager() {
         const slidesPerView = getSlidesPerView();
         const totalPages = calculateTotalPages();
-        const currentPage = Math.floor(currentPosition / slidesPerView) + 1;
+        const currentPage = Math.floor(currentSlide / slidesPerView) + 1;
         
         currentPageElement.textContent = currentPage;
         totalPagesElement.textContent = totalPages;
     }
     
-        function moveSlider() {
+    function moveSlider() {
         const slidesPerView = getSlidesPerView();
-        const slideWidth = slides[0].offsetWidth;
-        const maxPosition = totalSlides - slidesPerView;
+        const slideWidth = 100 / slidesPerView; 
+        const translateX = -currentSlide * slideWidth;
         
-        if (currentPosition < 0) {
-            currentPosition = 0;
-        } else if (currentPosition > maxPosition) {
-            currentPosition = maxPosition;
-        }
-        
-        sliderTrack.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+        sliderTrack.style.transform = `translateX(${translateX}%)`;
         updatePager();
+        
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide >= totalSlides - slidesPerView;
     }
     
     function nextPage() {
         const slidesPerView = getSlidesPerView();
-        const maxPosition = totalSlides - slidesPerView;
+        const maxSlide = totalSlides - slidesPerView;
         
-        if (currentPosition < maxPosition) {
-            currentPosition += slidesPerView;
+        if (currentSlide < maxSlide) {
+            currentSlide += slidesPerView;
+            if (currentSlide > maxSlide) {
+                currentSlide = maxSlide;
+            }
             moveSlider();
         }
     }
@@ -61,8 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function prevPage() {
         const slidesPerView = getSlidesPerView();
         
-        if (currentPosition > 0) {
-            currentPosition -= slidesPerView;
+        if (currentSlide > 0) {
+            currentSlide -= slidesPerView;
+            if (currentSlide < 0) {
+                currentSlide = 0;
+            }
             moveSlider();
         }
     }
@@ -71,7 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
     nextBtn.addEventListener('click', nextPage);
     
     window.addEventListener('resize', function() {
-        currentPosition = 0;
+        const slidesPerView = getSlidesPerView();
+        const maxSlide = totalSlides - slidesPerView;
+        if (currentSlide > maxSlide) {
+            currentSlide = maxSlide;
+        }
         moveSlider();
     });
     
@@ -98,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (diff > 0) {
                 nextPage();
             } else {
-                prevPage();
+                prevPage(); 
             }
         }
     }
