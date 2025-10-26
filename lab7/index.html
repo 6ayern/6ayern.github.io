@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея-слайдер</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Галерея изображений</h1>
+        
+        <div class="slider">
+            <button class="arrow prev" id="prevBtn">&#10094;</button>
+            
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide">
+                    <img src="https://cdn.nur.kz/images/1120/2c69c6830553fb33.jpeg" alt="Изображение 1">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/23/9b/9e/239b9e8579fc652e27c98b409f5154bb.jpg" alt="Изображение 2">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/originals/ec/22/01/ec2201d78d148767389712b87ddcbf0d.png" alt="Изображение 3">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/8c/ed/08/8ced0894f81968666216524515f232ce.jpg" alt="Изображение 4">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/5b/37/a7/5b37a758cbf9691072fba8fbd5949899.jpg" alt="Изображение 5">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/2d/5d/27/2d5d27303949130525f01848f40472b6.jpg" alt="Изображение 6">
+                </div>
+                <div class="slide">
+                    <img src="https://i.pinimg.com/originals/13/8d/ea/138dea5774ef294f1bb7ec946d89ac4a.jpg" alt="Изображение 7">
+                </div>
+                <div class="slide">
+                    <img src="https://avatars.mds.yandex.net/i?id=a24cdf828032797a826214f95478fc349b41d8cd-4243773-images-thumbs&n=13" alt="Изображение 8">
+                </div>
+            </div>
+            
+            <button class="arrow next" id="nextBtn">&#10095;</button>
+        </div>
+        
+        <div class="pager" id="pager">
+            <span class="current-page">1</span> / <span class="total-pages">3</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
