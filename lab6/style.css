@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.radio-group label, .checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"], 
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.price-display {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e8;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+}
+
+#totalPrice {
+    color: #4caf50;
+    font-size: 24px;
+    font-weight: bold;
+}
