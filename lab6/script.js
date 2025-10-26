@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         premium: 300,
         custom: 500
     };
-
     const quantityInput = document.getElementById('quantity');
     const serviceTypeRadios = document.querySelectorAll('input[name="serviceType"]');
     const optionsGroup = document.getElementById('options-group');
@@ -74,3 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateOptionsVisibility();
 });
+
